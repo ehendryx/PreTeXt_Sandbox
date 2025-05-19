@@ -1,0 +1,281 @@
+\RequirePackage{pdfmanagement-testphase}
+\DeclareDocumentMetadata{uncompress,pdfversion=2.0}
+
+\documentclass[12pt]{article}
+\usepackage[tmargin=.75in,lmargin=.75in,rmargin=.75in,bmargin=.7in]{geometry}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsfonts}
+% \usepackage{float}
+\usepackage{amssymb,amsthm}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amsopn}
+\usepackage{bm}
+\usepackage{setspace}
+\usepackage[section]{placeins}
+\usepackage{fancyhdr, lastpage}
+%\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{algcompatible}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\usepackage[backend=bibtex]{biblatex}
+
+\usepackage{tagpdf}
+\tagpdfsetup{activate,paratagging,interwordspace}
+
+\usepackage{hyperref}
+
+\bibliography{proposal_bibliography.bib}{}
+%\pagestyle{headings}
+%\markright{\hfill \hfill \hfill Name: \hfill}
+%\pagenumbering{gobble}
+
+%\title{Calculus 2 \\ \vspace*{.3in}  \Large{Exam 2} \\ \vspace*{.5in} \large{October 29, 2018} \vspace*{1in}}
+%\date{}
+
+\author{\large Name: \underline{\hspace{4.5in}}}
+
+
+%
+\pagestyle{fancy}
+\fancyhf{}
+%%
+%\lhead{February 17, 2017}
+\chead{Applied Algebra Notes: Section 1.1}
+\rfoot{\thepage{}}
+
+%
+%\cfoot{\thepage{}}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\begin{document}
+%\begin{center}
+%\textbf{Introduction to Limits} % Section 1.1
+%\end{center}
+
+\subsection*{Brief Course Introduction}
+
+Where have you seen math applied in other courses or even daily life?
+\vspace{2.2in}
+
+\noindent Using mathematical theory, notation, methods, and tools to answer practical questions is a \\
+
+\vspace{-.12in}
+\noindent form of \underline{\hspace{3.3in}}.
+
+\vspace{.5in}
+%
+%\noindent \textbf{Common steps in applied math:} \hspace{1.7in} \textbf{Example:}
+%\vspace{.1in}
+%\begin{enumerate}
+%[leftmargin=.25in]
+%\item Make measurements
+%\vspace{.8in}
+%\item Describe how the measurements relate to one another
+%\vspace{.8in}
+%\item Develop a model
+%\vspace{.8in}
+%\item Find solution and/or write simulation\\to answer practical questions about measurements
+%\vspace{.8in}
+%
+%\end{enumerate}
+%
+%\vspace{.5in}
+
+\noindent One important skill to succeed in this class and beyond is {\bf abstraction}\index{concepts!abstraction}:
+\begin{itemize}
+\item the realization that the letter $x$ in an equation might represent the physical size of a cell, the cost of a sweater, the size of a population, the age of a company, etc.\\
+\item the understanding that although we are interested in a specific application problem, we have to carefully apply the rules of mathematics to achieve a solution -- we solve an equation the same way whether or not it is purely a mathematical problem or represents a real-world problem\\
+\item the recognition that many visibly different applied problems might be linked by {\it the same} mathematical description, and that what we learn from one system/situation could teach us about another -- even though we might not recognize any direct real-world similarities between the two systems
+\end{itemize}
+
+
+\vspace{.3in}
+
+\subsection*{Section 1.1: Linear Models}
+
+\noindent A model describes a relationship between variables. This relationship can be represented in a variety of ways:
+
+
+\begin{itemize}
+\item with a table of values\\
+\item with a graph\\
+\item with an equation\\
+\end{itemize}
+
+\vspace{.1in}
+\noindent \textbf{Ex:} A taxi out of Dulles Airport in Washington, DC, charges a traveler an initial fee of \$2.00, plus \$1.50 for each mile traveled. 
+
+\begin{enumerate}
+\item Complete the \textbf{table of values} showing the charge, $C$, for a trip of $n$ miles.
+
+\begin{table}[h!]
+\begin{center}
+\renewcommand{\arraystretch}{1.7}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$n$ &	\hspace*{.2in} 0 \hspace*{.2in} &	\hspace*{.2in} 5 \hspace*{.2in} &	\hspace*{.2in} 10 \hspace*{.2in} & \hspace*{.2in} 15 \hspace*{.2in} & \hspace*{.2in} 20 \hspace*{.2in} &  \hspace*{.2in} 25 \hspace*{.2in}\\
+\hline
+$C$ & & & & & & \\
+\hline	
+\end{tabular}
+\end{center}
+\end{table}			
+
+\item \textbf{Graph} the relationship.
+%
+%\hspace*{3in}
+%\begin{tikzpicture}[scale=.59]
+%  \begin{axis}[width=0.8\textwidth,
+%       height=0.8\textwidth,grid=major, ymin=-5,ymax=60,xmax=40,xmin=-5, ticks=none]
+%\end{axis}
+%\end{tikzpicture}
+
+%
+%\begin{tikzpicture}
+%   \draw[step=5cm,color=gray] (0,0) grid (40,60);
+%\end{tikzpicture}
+
+%\vspace{3in}
+\begin{center}
+%\hspace*{-.6in}
+\begin{tikzpicture}[scale=.59]
+  \begin{axis}[width=0.7\textwidth,
+       height=0.8\textwidth,axis lines=center,grid=major, ymin=-2,ymax=62,xmax=42,xmin=-2,axis line style={latex-latex}, ticks=none]
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\item Write an \textbf{equation} for the charge, $C$, in terms of the number of miles traveled, $n$.
+
+
+\vspace{1in}
+
+\item What is the charge for a trip to Mount Vernon, 35 miles from the airport? Illustrate the answer on your graph.
+
+
+\vspace{1in}
+
+
+
+
+\item If a ride to the National Institutes of Health (NIH) costs \$42.50, how far is it from the airport to the NIH? Illustrate the answer on your graph.
+
+
+\vspace{1.2in}
+\end{enumerate}
+
+\noindent The \underline{\hspace{1.2in}} of a graph are the points where the graph crosses the axes.\\
+
+\begin{itemize}
+\item The  \underline{\hspace{1.2in}} is the point $(0,y)$ found by setting   \underline{\hspace{1in}} and solving for y.\\
+\item The  \underline{\hspace{1.2in}} is the point $(x,0)$ found by setting  \underline{\hspace{1in}} and solving for x.
+\end{itemize}
+
+\vspace{.3in}
+\noindent \textbf{Ex:} Find the intercepts of the graph in the airport example above. What do these intercepts represent?
+
+\vspace{2.2in}
+\noindent \hrulefill
+
+\noindent \textbf{Graphing a Line Using the ``Intercept Method'':}
+\begin{enumerate}
+\item Find the $x$- and $y$-intercepts.
+\item Plot the intercepts.
+\item Choose a value of $x$ and find a third point on the line to make it a bit easier to make the line straight.
+\item Draw a line through the points.
+\end{enumerate}
+\noindent \hrulefill
+
+\vspace{.3in}
+
+\noindent In the airport example, the model was of the form 
+\vspace{1.2in}
+
+\noindent Models of this form are called \underline{\hspace{3in}}. 
+\vspace{.2in}
+
+\noindent Linear equations can also be written in what is sometimes called \textbf{general form:}
+\vspace{1.2in}
+
+\newpage 
+\noindent \textbf{Ex:} Five pounds of body fat is equivalent to 16,000 calories. Carol can burn 600 calories per hour bicycling and 400 calories per hour swimming.  
+
+\begin{enumerate}
+\item Write an equation in general form that relates the number of hours, $x$, of cycling and the number of hours, $y$, of swimming Carol needs to perform to burn 16,000 calories. 
+\vspace{1in}
+
+\item Find the intercepts and use them to sketch the graph of the linear equation. 
+\vspace{.4in}
+
+
+\hspace*{3in}
+\begin{tikzpicture}[scale=.59]
+  \begin{axis}[width=0.9\textwidth,
+       height=0.9\textwidth,axis lines=center,grid=major, ymin=-1.5,ymax=12.5,xmax=12.5,xmin=-1.5,axis line style={latex-latex}, ticks=none]
+\end{axis}
+\end{tikzpicture}
+
+\vspace{.4in}
+\item What do the intercepts tell us about Carol’s exercise program?  
+\vspace{1.5in}
+
+\item Is the graph you drew in part (2) \textit{increasing} or \textit{decreasing}?
+\vspace{1.5in}
+\end{enumerate}
+ 
+ 
+\noindent \textbf{Ex:}
+Frank plants a dozen corn seedlings, each 6 inches tall.  With plenty of water and sunlight they will grow approximately 2 inches per day.  
+
+\begin{enumerate}
+\item Complete the table of values for the height, $h$, of the seedlings after $t$ days.  
+
+ 
+ \begin{table}[h!]
+\begin{center}
+\renewcommand{\arraystretch}{1.7}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$t$ &	\hspace*{.2in} 0 \hspace*{.2in} &	\hspace*{.2in} 5 \hspace*{.2in} &	\hspace*{.2in} 10 \hspace*{.2in} & \hspace*{.2in} 15 \hspace*{.2in} & \hspace*{.2in} 20 \hspace*{.2in} &  \hspace*{.2in} 25 \hspace*{.2in}\\
+\hline
+$h$ & & & & & & \\
+\hline	
+\end{tabular}
+\end{center}
+\end{table}	
+
+\item Write an equation for the height of the seedlings in terms of the number of days since they were planted.
+\vspace{1.1in}
+
+\item Find the intercepts of the graph.
+\vspace{1.4in}
+
+\item Graph the equation.
+\vspace{2.5in}
+%\hspace*{3in}
+%\begin{tikzpicture}[scale=.59]
+%  \begin{axis}[width=0.8\textwidth,
+%       height=0.8\textwidth,grid=major, ymin=-1.5,ymax=12.5,xmax=12.5,xmin=-.5, ticks=none]
+%\end{axis}
+%\end{tikzpicture}
+
+\vspace{.1in}
+
+
+\item What do the intercepts tell us about the problem?
+\vspace{2in}
+
+\end{enumerate}
+
+
+
+\end{document}
