@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pretext>
+    <article xml:id="worksheet">
+
+    <!-- When creating a new activity, make a copy of this file with appropriate name -->
+        <worksheet margin="1in" bottom="1.25cm" xml:id="Section_1-1">
+            <title>Applied Algebra Notes: Section 1.1</title>
+
+            <introduction>
+                <p>
+                    This is the introduction to the activity.
+                </p>
+            </introduction>
+
+            <exercise workspace="2.2in">
+                <statement>
+                    <p>
+                        Where have you seen math applied in other courses or even daily life?
+                    </p>
+                </statement>
+            </exercise>
+
+            <exercise>
+                <statement>
+                    <p>
+                        Using mathematical theory, notation, methods, and tools to answer practical questions is a form of <fillin characters="15"/>.
+                    </p>
+                </statement>
+            </exercise>
+        </worksheet>
+    </article>
+</pretext>

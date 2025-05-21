@@ -12,6 +12,9 @@
 
     <xi:include href="./notes/week01.ptx" xpointer="notes/1" />
     <xi:include href="./notes/week02.ptx" xpointer="notes/1" />
+    <xi:include href="./notes/latex_practice_course_introduction.ptx" xpointer="notes/1" />
+    <xi:include href="./notes/latex_practice_linear_models.ptx" xpointer="notes/1" />
+    <xi:include href="./notes/latex_practice_exponential_models.ptx" xpointer="notes/1" />
 
     <!-- Add more xi:include files here to include them in the main course -->
   </article>
