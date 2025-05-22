@@ -2,45 +2,61 @@
 
 <pretext>
     <article xml:id="notes">
-       <section xml:id="brief-course-introduction">
+        <section xml:id="brief-course-introduction">
             <title>Brief Course Introduction</title>
 
-  <p>
-    Where have you seen math applied in other courses or even daily life?
-  </p>
+            <worksheet margin="1in" xml:id="course_intro_notes">
+                <title>Brief Course Introduction</title>
 
-  <p>
-    Using mathematical theory, notation, methods, and tools to answer practical questions is a
-  </p>
+                <!--
+                <introduction>
+                    <p>
+                        This is the introduction to the activity.
+                    </p>
+                </introduction>
+                -->
+                <exercise workspace="3in">
+                    <statement>
+                        <p>
+                            Where have you seen math applied in other courses or even daily life?
+                        </p>
+                    </statement>
+                </exercise>
 
-  <p>
-    form of <em> </em>.
-  </p>
+                <exercise>
+                    <statement>
+                        <p>
+                            Using mathematical theory, notation, methods, and tools to answer practical questions is a form of <fillin characters="20"/>.
+                        </p>
+                    </statement>
+                </exercise>
 
-  <p>
-    One important skill to succeed in this class and beyond is <alert>abstraction</alert>concepts!abstraction:
-  </p>
+                <p>
+                    One important skill to succeed in this class and beyond is <term>abstraction</term>:
+                </p>
 
-  <ul>
-    <li>
-      <p>
-        the realization that the letter <m>x</m> in an equation might represent the physical size of a cell, the cost of a sweater, the size of a population, the age of a company, etc.
-      </p>
-    </li>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                the realization that the letter <m>x</m> in an equation might represent the physical size of a cell, the cost of a sweater, the size of a population, the age of a company, etc.
+                            </p>
+                        </li>
 
-    <li>
-      <p>
-        the understanding that although we are interested in a specific application problem, we have to carefully apply the rules of mathematics to achieve a solution – we solve an equation the same way whether or not it is purely a mathematical problem or represents a real-world problem
-      </p>
-    </li>
+                        <li>
+                            <p>
+                                the understanding that although we are interested in a specific application problem, we have to carefully apply the rules of mathematics to achieve a solution---we solve an equation the same way whether or not it is purely a mathematical problem or represents a real-world problem
+                            </p>
+                        </li>
 
-    <li>
-      <p>
-        the recognition that many visibly different applied problems might be linked by <em>the same</em> mathematical description, and that what we learn from one system/situation could teach us about another – even though we might not recognize any direct real-world similarities between the two systems
-      </p>
-    </li>
-  </ul>
-</section>
-
+                        <li>
+                            <p>
+                                the recognition that many visibly different applied problems might be linked by <em>the same</em> mathematical description, and that what we learn from one system/situation could teach us about another---even though we might not recognize any direct real-world similarities between the two systems
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </worksheet>
+        </section>
     </article>
 </pretext>

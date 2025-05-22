@@ -2,111 +2,128 @@
 
 <pretext>
     <article xml:id="notes">
+        <section xml:id="exponential_models">
+            <title>Section 4.5: Exponential Models</title>
 
-<subsection>
-    <title>Section 4.5: Exponential Models</title>
-
-    <p>
-        Suppose we want to fit the exponential function <m>f(x) = ab^{x}</m> to two known data points.
-        To do so, we can use the “ratio method”:
-    </p>
-
-    <ol>
-        <li>
             <p>
-                Plug the coordinates of each point into the exponential function to write two equations in terms of <m>a</m> and <m>b</m>.
+                Suppose we want to fit the exponential function <m>f(x) = ab^{x}</m> to two known data points.
+                To do so, we can use the “ratio method”:
             </p>
-        </li>
 
-        <li>
             <p>
-                Divide one equation by the other to eliminate <m>a</m> and solve for <m>b</m>.
-            </p>
-        </li>
+                <ol>
+                    <li>
+                        <p>
+                            Plug the coordinates of each point into the exponential function to write two equations in terms of <m>a</m> and <m>b</m>.
+                        </p>
+                    </li>
 
-        <li>
+                    <li>
+                        <p>
+                            Divide one equation by the other to eliminate <m>a</m> and solve for <m>b</m>.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Substitute <m>b</m> into either equation from Step 1 and solve for <m>a</m>.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+
             <p>
-                Substitute <m>b</m> into either equation from Step 1 and solve for <m>a</m>.
+                <alert>Ex:</alert> Find an exponential function that has the values <m>f(2) = 4.5</m> and <m>f(5)=121.5</m>.
             </p>
-        </li>
-    </ol>
 
-    <p>
-        <alert>Ex:</alert> Find an exponential function that has the values <m>f(2) = 4.5</m> and <m>f(5)=121.5</m>.
-    </p>
-
-    <p>
-        <alert>Ex:</alert> Find a formula for the exponential function shown below.
-    </p>
-
-    <p>
-    </p>
-    +[domain=-6.2:6.2, mark=none, black, thick,&#x3C;->] (,(3/2)*(9)^(/10));+[mark=*,mark options =fill = black,black] table  -5 0.5 ; +[mark=*,mark options =fill = black,black] table  5 4.5 ;
-    <p>
-    </p>
-
-    <p>
-        <alert>Ex:</alert> In 2005, the population of Egypt was 74 million and was growing by 2%per year.
-    </p>
-
-    <ol>
-        <li>
             <p>
-                If it continues to grow at the same rate, how long will it take the population of Egypt to double?
+                <alert>Ex:</alert> Find a formula for the exponential function shown below.
             </p>
-        </li>
 
-        <li>
+
+            <figure>
+                <caption>Graph of exponential function</caption>
+            <image>
+                <latex-image>
+                \begin{tikzpicture}[scale=1,&gt;=triangle 45,]
+  \begin{axis}[width=0.8\textwidth, height=0.8\textwidth,axis lines=center,grid=both, xmax=6.5, xmin=-6.5, ymax=6.4, ymin=-0.4, ,xlabel={$x$}, ylabel={$f(x)$},ytick distance = 2,xtick distance = 2, minor x tick num=1, minor y tick num=3, axis line style={latex-latex},minor grid style={lightgray,very thin},label style={at={(ticklabel cs:1.12)},font=\small}, samples=350]
+		\addplot+[domain=-6.2:6.2, mark=none, black, thick,&lt;-&gt;] (\x,{(3/2)*(9)^(\x/10)});
+		\addplot+[only marks,mark=*,mark options ={fill = black},black] coordinates {(-5, 0.5) (5, 4.5)};
+  	    <!-- \addplot+[mark=*,mark options ={fill = black},black] table {5 4.5}; -->
+\end{axis}
+\end{tikzpicture}
+                </latex-image>
+            </image>
+        </figure>
+
             <p>
-                Given your answer to the first part, use the doubling time to write the population’s growth law.
             </p>
-        </li>
-    </ol>
 
-    <p>
-        <alert>Ex:</alert> At its current rate of growth, the population of the U.S. will double in 115.87 years. What is the annual percent growth rate of the population?
-    </p>
-
-    <p>
-        <alert>Ex:</alert> Alcohol is eliminated from the body at a rate of 15%per hour. What is the half-life of alcohol in the body?
-    </p>
-
-    <p>
-    </p>
-
-    <p>
-        An <em> </em> is a sequence of equal payments or deposits made at equal time intervals.
-    </p>
-
-    <p>
-    </p>
-
-    <ul>
-        <li>
             <p>
-                If you make <m>n</m> payments per year for <m>t</m> years into an annuity that pays interest rate <m>r</m> compounded <m>n</m> times per year, the <alert> <em>future value</em> </alert>, <m>FV</m>, of the annuity is
-                <me>
-                    FV = \frac{P\left[\left(1 + \frac{r}{n}\right)^{nt}- 1\right]}{\frac{r}{n}},
-                </me>
-                where each payment is <m>P</m> dollars.
+                <alert>Ex:</alert> In 2005, the population of Egypt was 74 million and was growing by 2% per year.
             </p>
-        </li>
 
-        <li>
             <p>
-                If you wish to receive <m>n</m> payments per year for <m>t</m> years from a fund that earns interest rate <m>r</m> compounded <m>n</m> times per year, the <alert> <em>present value</em> </alert>, <m>PV</m>, of the annuity must be
-                <me>
-                    PV = \frac{P\left[1 - \left(1 + \frac{r}{n}\right)^{-nt}\right]}{\frac{r}{n}},
-                </me>
-                where each payment is <m>P</m> dollars.
+                <ol>
+                    <li>
+                        <p>
+                            If it continues to grow at the same rate, how long will it take the population of Egypt to double?
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Given your answer to the first part, use the doubling time to write the population’s growth law.
+                        </p>
+                    </li>
+                </ol>
             </p>
-        </li>
-    </ul>
 
-    <p>
-        <alert>Ex:</alert> You want to finance $25,000 to purchase a new car, and your financing institution charges an annual interest rate of 2.7%, compounded monthly. Using the formula for present value of an annuity, how large will your monthly payment be to pay off the loan in 5 years? In 6 years? <em>Note: Making a sequence of equal payments on a loan (plus interest) is called <alert>amortizing</alert> the loan.</em>
-    </p>
-</subsection>
+            <p>
+                <alert>Ex:</alert> At its current rate of growth, the population of the U.S. will double in 115.87 years. What is the annual percent growth rate of the population?
+            </p>
 
+            <p>
+                <alert>Ex:</alert> Alcohol is eliminated from the body at a rate of 15%per hour. What is the half-life of alcohol in the body?
+            </p>
+
+            <p>
+            </p>
+
+            <p>
+                An <em> </em> is a sequence of equal payments or deposits made at equal time intervals.
+            </p>
+
+            <p>
+            </p>
+
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            If you make <m>n</m> payments per year for <m>t</m> years into an annuity that pays interest rate <m>r</m> compounded <m>n</m> times per year, the <term> <em>future value</em> </term>, <m>FV</m>, of the annuity is
+                            <me>
+                                FV = \frac{P\left[\left(1 + \frac{r}{n}\right)^{nt}- 1\right]}{\frac{r}{n}},
+                            </me>
+                            where each payment is <m>P</m> dollars.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            If you wish to receive <m>n</m> payments per year for <m>t</m> years from a fund that earns interest rate <m>r</m> compounded <m>n</m> times per year, the <term> <em>present value</em> </term>, <m>PV</m>, of the annuity must be
+                            <me>
+                                PV = \frac{P\left[1 - \left(1 + \frac{r}{n}\right)^{-nt}\right]}{\frac{r}{n}},
+                            </me>
+                            where each payment is <m>P</m> dollars.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+
+            <p>
+                <alert>Ex:</alert> You want to finance $25,000 to purchase a new car, and your financing institution charges an annual interest rate of 2.7%, compounded monthly. Using the formula for present value of an annuity, how large will your monthly payment be to pay off the loan in 5 years? In 6 years? <em>Note: Making a sequence of equal payments on a loan (plus interest) is called <term>amortizing</term> the loan.</em>
+            </p>
+        </section>
     </article>
 </pretext>

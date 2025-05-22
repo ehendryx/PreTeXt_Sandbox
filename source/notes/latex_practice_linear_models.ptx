@@ -1,324 +1,353 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <pretext>
-  <article xml:id="notes">
-    <!--
-    <section xml:id="brief-course-introduction">
-      <title>Brief Course Introduction</title>
+    <article xml:id="notes">
+        <!--
+        <section xml:id="brief-course-introduction">
+            <title>Brief Course Introduction</title>
 
-      <p>
-        Where have you seen math applied in other courses or even daily life?
-      </p>
+            <p>
+                Where have you seen math applied in other courses or even daily life?
+            </p>
 
-      <p>
-        Using mathematical theory, notation, methods, and tools to answer practical questions is a
-      </p>
+            <p>
+                Using mathematical theory, notation, methods, and tools to answer practical questions is a
+            </p>
 
-      <p>
-        form of <em> </em>.
-      </p>
+            <p>
+                form of <em> </em>.
+            </p>
 
-      <p>
-        One important skill to succeed in this class and beyond is <alert>abstraction</alert>concepts!abstraction:
-      </p>
+            <p>
+                One important skill to succeed in this class and beyond is <alert>abstraction</alert>concepts!abstraction:
+            </p>
 
-      <ul>
-        <li>
-          <p>
-            the realization that the letter <m>x</m> in an equation might represent the physical size of a cell, the cost of a sweater, the size of a population, the age of a company, etc.
-          </p>
-        </li>
+            <ul>
+                <li>
+                    <p>
+                        the realization that the letter <m>x</m> in an equation might represent the physical size of a cell, the cost of a sweater, the size of a population, the age of a company, etc.
+                    </p>
+                </li>
 
-        <li>
-          <p>
-            the understanding that although we are interested in a specific application problem, we have to carefully apply the rules of mathematics to achieve a solution – we solve an equation the same way whether or not it is purely a mathematical problem or represents a real-world problem
-          </p>
-        </li>
+                <li>
+                    <p>
+                        the understanding that although we are interested in a specific application problem, we have to carefully apply the rules of mathematics to achieve a solution – we solve an equation the same way whether or not it is purely a mathematical problem or represents a real-world problem
+                    </p>
+                </li>
 
-        <li>
-          <p>
-            the recognition that many visibly different applied problems might be linked by <em>the same</em> mathematical description, and that what we learn from one system/situation could teach us about another – even though we might not recognize any direct real-world similarities between the two systems
-          </p>
-        </li>
-      </ul>
-    </section>
-    -->
-    <section xml:id="linear-models">
-      <title>Section 1.1: Linear Models</title>
+                <li>
+                    <p>
+                        the recognition that many visibly different applied problems might be linked by <em>the same</em> mathematical description, and that what we learn from one system/situation could teach us about another – even though we might not recognize any direct real-world similarities between the two systems
+                    </p>
+                </li>
+            </ul>
+        </section>
+        -->
+        <section xml:id="linear-models">
+            <title>Section 1.1: Linear Models</title>
 
-      <p>
-        A model describes a relationship between variables.
-        This relationship can be represented in a variety of ways:
-      </p>
+            <p>
+                A model describes a relationship between variables.
+                This relationship can be represented in a variety of ways:
+            </p>
 
-      <ul>
-        <li>
-          <p>
-            with a table of values
-          </p>
-        </li>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            with a table of values
+                        </p>
+                    </li>
 
-        <li>
-          <p>
-            with a graph
-          </p>
-        </li>
+                    <li>
+                        <p>
+                            with a graph
+                        </p>
+                    </li>
 
-        <li>
-          <p>
-            with an equation
-          </p>
-        </li>
-      </ul>
+                    <li>
+                        <p>
+                            with an equation
+                        </p>
+                    </li>
+                </ul>
+            </p>
 
-      <p>
-        <alert>Ex:</alert> A taxi out of Dulles Airport in Washington, DC, charges a traveler an initial fee of $2.00, plus $1.50 for each mile traveled.
-      </p>
+            <p>
+                <alert>Ex:</alert> A taxi out of Dulles Airport in Washington, DC, charges a traveler an initial fee of $2.00, plus $1.50 for each mile traveled.
+            </p>
 
-      <ol>
-        <li>
-          <p>
-            Complete the <alert>table of values</alert> showing the charge, <m>C</m>, for a trip of <m>n</m> miles.
-          </p>
-          <!--
-          <table>
-            -->
-            <tabular top="minor" left="minor">
-              <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col>
-              <row bottom="minor">
-                <cell> <m>n</m> </cell>
-                <cell> 0 </cell>
-                <cell> 5 </cell>
-                <cell> 10 </cell>
-                <cell> 15 </cell>
-                <cell> 20 </cell>
-                <cell> 25 </cell>
-              </row>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            Complete the <alert>table of values</alert> showing the charge, <m>C</m>, for a trip of <m>n</m> miles.
+                        </p>
+                        <!--
+                        <table>
+                            -->
+                            <tabular top="minor" left="minor">
+                                <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col>
+                                <row bottom="minor">
+                                    <cell> <m>n</m> </cell>
+                                    <cell> 0 </cell>
+                                    <cell> 5 </cell>
+                                    <cell> 10 </cell>
+                                    <cell> 15 </cell>
+                                    <cell> 20 </cell>
+                                    <cell> 25 </cell>
+                                </row>
 
-              <row bottom="minor">
-                <cell> <m>C</m> </cell>
-                <cell> </cell>
-                <cell> </cell>
-                <cell> </cell>
-                <cell> </cell>
-                <cell> </cell>
-                <cell> </cell>
-              </row>
-            </tabular>
-            <!--
-          </table>
-          -->
-        </li>
+                                <row bottom="minor">
+                                    <cell> <m>C</m> </cell>
+                                    <cell> </cell>
+                                    <cell> </cell>
+                                    <cell> </cell>
+                                    <cell> </cell>
+                                    <cell> </cell>
+                                    <cell> </cell>
+                                </row>
+                            </tabular>
+                            <!--
+                        </table>
+                        -->
+                    </li>
 
-        <li>
-          <p>
-            <alert>Graph</alert> the relationship.
-          </p>
-        </li>
+                    <li>
+                        <p>
+                            <alert>Graph</alert> the relationship.
+                        </p>
 
-        <li>
-          <p>
-            Write an <alert>equation</alert> for the charge, <m>C</m>, in terms of the number of miles traveled, <m>n</m>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            What is the charge for a trip to Mount Vernon, 35 miles from the airport? Illustrate the answer on your graph.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            If a ride to the National Institutes of Health (NIH) costs $42.50, how far is it from the airport to the NIH? Illustrate the answer on your graph.
-          </p>
-        </li>
-      </ol>
-
-      <p>
-        The <em> </em> of a graph are the points where the graph crosses the axes.
-      </p>
-
-      <ul>
-        <li>
-          <p>
-            The <em> </em> is the point <m>(0,y)</m> found by setting <em> </em> and solving for y.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            The <em> </em> is the point <m>(x,0)</m> found by setting <em> </em> and solving for x.
-          </p>
-        </li>
-      </ul>
-
-      <p>
-        <alert>Ex:</alert> Find the intercepts of the graph in the airport example above. What do these intercepts represent?
-      </p>
-
-      <p>
-        <figure xml:id="figure-tikz-airport">
-          <caption>Axes for airport example</caption>
-          <image xml:id="tikz-airport" width="70%">
-            <latex-image>
+                        <p>
+                <figure xml:id="figure-tikz-airport">
+                    <caption>Axes for airport example</caption>
+                    <image xml:id="tikz-airport" width="70%">
+                        <shortdescription>
+                            This is a grid for graphing
+                        </shortdescription>
+                        <latex-image>
                \begin{tikzpicture}[scale=.59]
                 \begin{axis}[width=0.9\textwidth,
-                  height=0.9\textwidth,axis lines=center,grid=major, ymin=-1.5,ymax=12.5,xmax=12.5,xmin=-1.5,axis line style={latex-latex}, ticks=none]
+                  height=0.9\textwidth,axis lines=center,grid=major, ymin=-2,ymax=62,xmax=42,xmin=-2,axis line style={latex-latex}, ytick distance = 5,xtick distance = 5, ticks=none]
                 \end{axis}
               \end{tikzpicture}
-            </latex-image>
-          </image>
-        </figure>
-      </p>
+                        </latex-image>
+                    </image>
+                </figure>
+            </p>
 
-      <p>
-        <alert>Graphing a Line Using the “Intercept Method”:</alert>
-      </p>
+            <p>
+                <figure xml:id="taxi-axes1">
+                    <caption>Axes for taxi example.</caption>
+                    <image source="assets/taxi_axes.xml" width="80%"/>
+                    </figure>
+                </p>
 
-      <ol>
-        <li>
-          <p>
-            Find the <m>x</m>- and <m>y</m>-intercepts.
-          </p>
-        </li>
+                <p>
+                    <figure xml:id="taxi-axes2">
+                        <caption>Axes for taxi example.</caption>
+                        <image>
+                            <prefigure xmlns="https://prefigure.org" label="taxi_axes">
+                            <diagram dimensions="(300,300)" margins="5">
+                            <coordinates bbox="(-2,-2,42,62)">
+                            <grid-axes arrows="2" xlabel="" ylabel="" spacings="((0,5,42),(0,5,62))" hlabels="()" />
+                            </coordinates>
+                            </diagram>
+                            <shortdescription>
+                            An 8 by 12 grid with axis origin at lower left for plotting taxi data
+                        </shortdescription>
+                            </prefigure>
+                        </image>
+                    </figure>
+                </p>
+                    </li>
 
-        <li>
-          <p>
-            Plot the intercepts.
-          </p>
-        </li>
+                     
 
-        <li>
-          <p>
-            Choose a value of <m>x</m> and find a third point on the line to make it a bit easier to make the line straight.
-          </p>
-        </li>
+                    <li>
+                        <p>
+                            Write an <alert>equation</alert> for the charge, <m>C</m>, in terms of the number of miles traveled, <m>n</m>.
+                        </p>
+                    </li>
 
-        <li>
-          <p>
-            Draw a line through the points.
-          </p>
-        </li>
-      </ol>
+                    <li>
+                        <p>
+                            What is the charge for a trip to Mount Vernon, 35 miles from the airport? Illustrate the answer on your graph.
+                        </p>
+                    </li>
 
-      <p>
-      </p>
+                    <li>
+                        <p>
+                            If a ride to the National Institutes of Health (NIH) costs $42.50, how far is it from the airport to the NIH? Illustrate the answer on your graph.
+                        </p>
+                    </li>
+                </ol>
+            </p>
 
-      <p>
-        In the airport example, the model was of the form
-      </p>
+            <p>
+                The <em> </em> of a graph are the points where the graph crosses the axes.
+            </p>
 
-      <p>
-        Models of this form are called <em> </em>.
-      </p>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            The <em> </em> is the point <m>(0,y)</m> found by setting <em> </em> and solving for y.
+                        </p>
+                    </li>
 
-      <p>
-        Linear equations can also be written in what is sometimes called <alert>general form:</alert>
-      </p>
+                    <li>
+                        <p>
+                            The <em> </em> is the point <m>(x,0)</m> found by setting <em> </em> and solving for x.
+                        </p>
+                    </li>
+                </ul>
+            </p>
 
-      <p>
-        <alert>Ex:</alert> Five pounds of body fat is equivalent to 16,000 calories. Carol can burn 600 calories per hour bicycling and 400 calories per hour swimming.
-      </p>
+            <p>
+                <alert>Ex:</alert> Find the intercepts of the graph in the airport example above. What do these intercepts represent?
+            </p>
 
-      <ol>
-        <li>
-          <p>
-            Write an equation in general form that relates the number of hours, <m>x</m>, of cycling and the number of hours, <m>y</m>, of swimming Carol needs to perform to burn 16,000 calories.
-          </p>
-        </li>
 
-        <li>
-          <p>
-            Find the intercepts and use them to sketch the graph of the linear equation.
-          </p>
+                <p>
+                    <alert>Graphing a Line Using the “Intercept Method”:</alert>
+                </p>
 
-          <p>
-          </p>
-        </li>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Find the <m>x</m>- and <m>y</m>-intercepts.
+                            </p>
+                        </li>
 
-        <li>
-          <p>
-            What do the intercepts tell us about Carol’s exercise program?
-          </p>
-        </li>
+                        <li>
+                            <p>
+                                Plot the intercepts.
+                            </p>
+                        </li>
 
-        <li>
-          <p>
-            Is the graph you drew in part (2) <em>increasing</em> or <em>decreasing</em>?
-          </p>
-        </li>
-      </ol>
+                        <li>
+                            <p>
+                                Choose a value of <m>x</m> and find a third point on the line to make it a bit easier to make the line straight.
+                            </p>
+                        </li>
 
-      <p>
-        <alert>Ex:</alert> Frank plants a dozen corn seedlings, each 6 inches tall. With plenty of water and sunlight they will grow approximately 2 inches per day.
-      </p>
+                        <li>
+                            <p>
+                                Draw a line through the points.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
 
-      <ol>
-        <li>
-          <p>
-            Complete the table of values for the height, <m>h</m>, of the seedlings after <m>t</m> days.
-          </p>
-          \arraystretch1.7
-          <tabular left="minor">
-            <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col>
-            <row>
-            </row>
+                <p>
+                    In the airport example, the model was of the form
+                </p>
 
-            <row>
-              <cell> <m>t</m> </cell>
-              <cell> 0 </cell>
-              <cell> 5 </cell>
-              <cell> 10 </cell>
-              <cell> 15 </cell>
-              <cell> 20 </cell>
-              <cell> 25 </cell>
-            </row>
+                <p>
+                    Models of this form are called <em> </em>.
+                </p>
 
-            <row>
-              <cell> </cell>
-            </row>
+                <p>
+                    Linear equations can also be written in what is sometimes called <alert>general form:</alert>
+                </p>
 
-            <row>
-              <cell> <m>h</m> </cell>
-              <cell> </cell>
-              <cell> </cell>
-              <cell> </cell>
-              <cell> </cell>
-              <cell> </cell>
-              <cell> </cell>
-            </row>
+                <p>
+                    <alert>Ex:</alert> Five pounds of body fat is equivalent to 16,000 calories. Carol can burn 600 calories per hour bicycling and 400 calories per hour swimming.
+                </p>
 
-            <row>
-              <cell> </cell>
-            </row>
-          </tabular>
-        </li>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Write an equation in general form that relates the number of hours, <m>x</m>, of cycling and the number of hours, <m>y</m>, of swimming Carol needs to perform to burn 16,000 calories.
+                            </p>
+                        </li>
 
-        <li>
-          <p>
-            Write an equation for the height of the seedlings in terms of the number of days since they were planted.
-          </p>
-        </li>
+                        <li>
+                            <p>
+                                Find the intercepts and use them to sketch the graph of the linear equation.
+                            </p>
 
-        <li>
-          <p>
-            Find the intercepts of the graph.
-          </p>
-        </li>
+                            <p>
+                            </p>
+                        </li>
 
-        <li>
-          <p>
-            Graph the equation.
-          </p>
-        </li>
+                        <li>
+                            <p>
+                                What do the intercepts tell us about Carol's exercise program?
+                            </p>
+                        </li>
 
-        <li>
-          <p>
-            What do the intercepts tell us about the problem?
-          </p>
-        </li>
-      </ol>
-    </section>
-  </article>
-</pretext>
+                        <li>
+                            <p>
+                                Is the graph you drew in part (2) <em>increasing</em> or <em>decreasing</em>?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+
+                <p>
+                    <alert>Ex:</alert> Frank plants a dozen corn seedlings, each 6 inches tall. With plenty of water and sunlight they will grow approximately 2 inches per day.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Complete the table of values for the height, <m>h</m>, of the seedlings after <m>t</m> days.
+                            </p>
+
+                            <tabular top="minor" left="minor">
+                                <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col>
+                                <row bottom="minor">
+                                    <cell> <m>t</m> </cell>
+                                    <cell> 0 </cell>
+                                    <cell> 5 </cell>
+                                    <cell> 10 </cell>
+                                    <cell> 15 </cell>
+                                    <cell> 20 </cell>
+                                    <cell> 25 </cell>
+                                </row>
+
+                                <row bottom="minor">
+                                    <cell> <m>h</m> </cell>
+                                    <cell> </cell>
+                                    <cell> </cell>
+                                    <cell> </cell>
+                                    <cell> </cell>
+                                    <cell> </cell>
+                                    <cell> </cell>
+                                </row>
+                            </tabular>
+                        </li>
+
+                        <li>
+                            <p>
+                                Write an equation for the height of the seedlings in terms of the number of days since they were planted.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Find the intercepts of the graph.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Graph the equation.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                What do the intercepts tell us about the problem?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </section>
+        </article>
+    </pretext>
