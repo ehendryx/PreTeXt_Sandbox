@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Section 1.1: Linear Models</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="article">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.8.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.962d00926ef9460e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext article ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="ch-course-notes.html"><span class="title">Course Notes</span></a></h1>
+<p class="byline"></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="course_intro_notes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="exponential_models.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth1 focused" data-preexpanded-levels="0" data-max-levels="1"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-week-01.html" class="internal"><span class="title">Week 1</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-week-02.html" class="internal"><span class="title">Week 2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="course_intro_notes.html" class="internal"><span class="title">Brief Course Introduction</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="linear-models.html" class="internal"><span class="title">Section 1.1: Linear Models</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="exponential_models.html" class="internal"><span class="title">Section 4.5: Exponential Models</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="linear-models"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Section 1.1: Linear Models</span>
+</h2>
+<div class="para" id="linear-models-2">A model describes a relationship between variables. This relationship can be represented in a variety of ways:</div>
+<div class="para logical" id="linear-models-3"><ul class="disc" id="linear-models-3-1">
+<li id="linear-models-3-1-1"><div class="para" id="linear-models-3-1-1-1">with a table of values</div></li>
+<li id="linear-models-3-1-2"><div class="para" id="linear-models-3-1-2-1">with a graph</div></li>
+<li id="linear-models-3-1-3"><div class="para" id="linear-models-3-1-3-1">with an equation</div></li>
+</ul></div>
+<div class="para" id="linear-models-4">
+<em class="alert">Ex:</em> A taxi out of Dulles Airport in Washington, DC, charges a traveler an initial fee of $2.00, plus $1.50 for each mile traveled.</div>
+<div class="para logical" id="linear-models-5"><ol class="decimal" id="linear-models-5-1">
+<li id="linear-models-5-1-1">
+<div class="para" id="linear-models-5-1-1-1">Complete the <em class="alert">table of values</em> showing the charge, <span class="process-math">\(C\text{,}\)</span> for a trip of <span class="process-math">\(n\)</span> miles.</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines"><span class="process-math">\(n\)</span></td>
+<td class="c m b1 r1 l0 t1 lines">0</td>
+<td class="c m b1 r1 l0 t1 lines">5</td>
+<td class="c m b1 r1 l0 t1 lines">10</td>
+<td class="c m b1 r1 l0 t1 lines">15</td>
+<td class="c m b1 r1 l0 t1 lines">20</td>
+<td class="c m b1 r1 l0 t1 lines">25</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(C\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div>
+</li>
+<li id="linear-models-5-1-2"><div class="para" id="linear-models-5-1-2-1">
+<em class="alert">Graph</em> the relationship.</div></li>
+</ol></div>
+<figure class="figure figure-like" id="figure-tikz-airport"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="generated/latex-image/tikz-airport.svg" role="img" class="contained" alt="This is a grid for graphing"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1<span class="period">.</span></span><span class="space"> </span>Axes for airport example</figcaption></figure><figure class="figure figure-like" id="taxi-axes1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/prefigure/taxi_axes_prefig.svg" role="img" class="contained" alt="An 8 by 12 grid with axis origin at lower left for plotting taxi data"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span><span class="space"> </span>Axes for taxi example.</figcaption></figure><div class="para logical" id="linear-models-8"><ol class="decimal" id="linear-models-8-1">
+<li id="linear-models-8-1-1"><div class="para" id="linear-models-8-1-1-1">Write an <em class="alert">equation</em> for the charge, <span class="process-math">\(C\text{,}\)</span> in terms of the number of miles traveled, <span class="process-math">\(n\text{.}\)</span>
+</div></li>
+<li id="linear-models-8-1-2"><div class="para" id="linear-models-8-1-2-1">What is the charge for a trip to Mount Vernon, 35 miles from the airport? Illustrate the answer on your graph.</div></li>
+<li id="linear-models-8-1-3"><div class="para" id="linear-models-8-1-3-1">If a ride to the National Institutes of Health (NIH) costs $42.50, how far is it from the airport to the NIH? Illustrate the answer on your graph.</div></li>
+</ol></div>
+<div class="para" id="linear-models-9">The <em class="emphasis"></em> of a graph are the points where the graph crosses the axes.</div>
+<div class="para logical" id="linear-models-10"><ul class="disc" id="linear-models-10-1">
+<li id="linear-models-10-1-1"><div class="para" id="linear-models-10-1-1-1">The <em class="emphasis"></em> is the point <span class="process-math">\((0,y)\)</span> found by setting <em class="emphasis"></em> and solving for y.</div></li>
+<li id="linear-models-10-1-2"><div class="para" id="linear-models-10-1-2-1">The <em class="emphasis"></em> is the point <span class="process-math">\((x,0)\)</span> found by setting <em class="emphasis"></em> and solving for x.</div></li>
+</ul></div>
+<div class="para" id="linear-models-11">
+<em class="alert">Ex:</em> Find the intercepts of the graph in the airport example above. What do these intercepts represent?</div>
+<div class="para" id="linear-models-12"><em class="alert">Graphing a Line Using the “Intercept Method”:</em></div>
+<div class="para logical" id="linear-models-13"><ol class="decimal" id="linear-models-13-1">
+<li id="linear-models-13-1-1"><div class="para" id="linear-models-13-1-1-1">Find the <span class="process-math">\(x\)</span>- and <span class="process-math">\(y\)</span>-intercepts.</div></li>
+<li id="linear-models-13-1-2"><div class="para" id="linear-models-13-1-2-1">Plot the intercepts.</div></li>
+<li id="linear-models-13-1-3"><div class="para" id="linear-models-13-1-3-1">Choose a value of <span class="process-math">\(x\)</span> and find a third point on the line to make it a bit easier to make the line straight.</div></li>
+<li id="linear-models-13-1-4"><div class="para" id="linear-models-13-1-4-1">Draw a line through the points.</div></li>
+</ol></div>
+<div class="para" id="linear-models-14">In the airport example, the model was of the form</div>
+<div class="para" id="linear-models-15">Models of this form are called <em class="emphasis"></em>.</div>
+<div class="para" id="linear-models-16">Linear equations can also be written in what is sometimes called <em class="alert">general form:</em>
+</div>
+<div class="para" id="linear-models-17">
+<em class="alert">Ex:</em> Five pounds of body fat is equivalent to 16,000 calories. Carol can burn 600 calories per hour bicycling and 400 calories per hour swimming.</div>
+<div class="para logical" id="linear-models-18"><ol class="decimal" id="linear-models-18-1">
+<li id="linear-models-18-1-1"><div class="para" id="linear-models-18-1-1-1">Write an equation in general form that relates the number of hours, <span class="process-math">\(x\text{,}\)</span> of cycling and the number of hours, <span class="process-math">\(y\text{,}\)</span> of swimming Carol needs to perform to burn 16,000 calories.</div></li>
+<li id="linear-models-18-1-2">
+<div class="para" id="linear-models-18-1-2-1">Find the intercepts and use them to sketch the graph of the linear equation.</div>
+<div class="para" id="linear-models-18-1-2-2"></div>
+</li>
+<li id="linear-models-18-1-3"><div class="para" id="linear-models-18-1-3-1">What do the intercepts tell us about Carol’s exercise program?</div></li>
+<li id="linear-models-18-1-4"><div class="para" id="linear-models-18-1-4-1">Is the graph you drew in part (2) <em class="emphasis">increasing</em> or <em class="emphasis">decreasing</em>?</div></li>
+</ol></div>
+<div class="para" id="linear-models-19">
+<em class="alert">Ex:</em> Frank plants a dozen corn seedlings, each 6 inches tall. With plenty of water and sunlight they will grow approximately 2 inches per day.</div>
+<div class="para logical" id="linear-models-20"><ol class="decimal" id="linear-models-20-1">
+<li id="linear-models-20-1-1">
+<div class="para" id="linear-models-20-1-1-1">Complete the table of values for the height, <span class="process-math">\(h\text{,}\)</span> of the seedlings after <span class="process-math">\(t\)</span> days.</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines"><span class="process-math">\(t\)</span></td>
+<td class="c m b1 r1 l0 t1 lines">0</td>
+<td class="c m b1 r1 l0 t1 lines">5</td>
+<td class="c m b1 r1 l0 t1 lines">10</td>
+<td class="c m b1 r1 l0 t1 lines">15</td>
+<td class="c m b1 r1 l0 t1 lines">20</td>
+<td class="c m b1 r1 l0 t1 lines">25</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(h\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div>
+</li>
+<li id="linear-models-20-1-2"><div class="para" id="linear-models-20-1-2-1">Write an equation for the height of the seedlings in terms of the number of days since they were planted.</div></li>
+<li id="linear-models-20-1-3"><div class="para" id="linear-models-20-1-3-1">Find the intercepts of the graph.</div></li>
+<li id="linear-models-20-1-4"><div class="para" id="linear-models-20-1-4-1">Graph the equation.</div></li>
+<li id="linear-models-20-1-5"><div class="para" id="linear-models-20-1-5-1">What do the intercepts tell us about the problem?</div></li>
+</ol></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="course_intro_notes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="exponential_models.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
