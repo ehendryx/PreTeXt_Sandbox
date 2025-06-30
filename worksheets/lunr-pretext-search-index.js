@@ -1,13 +1,22 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
-  "id": "sec-section-name",
+  "id": "frontmatter",
   "level": "1",
-  "url": "sec-section-name.html",
-  "type": "Article",
+  "url": "frontmatter.html",
+  "type": "Front Matter",
   "number": "",
-  "title": "In-Class Activities",
-  "body": " In-Class Activities    Emily Lyons Applied Algebra Notes University of Central Oklahoma  Last Updated:         These activities are a way to sample guided notes for class.       PreTeXt   "
+  "title": "Front Matter",
+  "body": "  Emily Lyons Applied Algebra Notes University of Central Oklahoma  Last Updated:       "
+},
+{
+  "id": "Section_1-1",
+  "level": "1",
+  "url": "Section_1-1.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Applied Algebra Notes: Section 1.1",
+  "body": " Applied Algebra Notes: Section 1.1   These are notes for the first day of class.     Where have you seen math applied in other courses or even daily life?      Using mathematical theory, notation, methods, and tools to answer practical questions is a form of .    "
 },
 {
   "id": "Section_1-1-3",
