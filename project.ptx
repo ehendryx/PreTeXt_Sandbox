@@ -9,11 +9,11 @@
             output-filename="syllabus.zip" />
     <target name="syllabus-print" source="syllabus.ptx" format="pdf"
             output-filename="syllabus.pdf" publication="publication-syllabus.ptx" />
-<!-- Taking this out for now 
+<!-- Taking this out for now  -->
     <target name="activities-web" format="html" source="activities.ptx"
             publication="publication.ptx" deploy-dir="worksheets" />
     <target name="activities-print" format="pdf" source="activities.ptx"
-            output-filename="activities.pdf" publication="publication.ptx" />  -->
+            output-filename="activities.pdf" publication="publication.ptx" /> 
 
 
     <target name="notes-web" format="html" source="notes.ptx"
