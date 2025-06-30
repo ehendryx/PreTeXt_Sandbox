@@ -1,24 +1,6 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
-  "id": "notes-week-01",
-  "level": "1",
-  "url": "notes-week-01.html",
-  "type": "Section",
-  "number": "",
-  "title": "Week 1",
-  "body": " Week 1  This week we covered the following topics:  "
-},
-{
-  "id": "notes-week-02",
-  "level": "1",
-  "url": "notes-week-02.html",
-  "type": "Section",
-  "number": "",
-  "title": "Week 2",
-  "body": " Week 2  This week we covered the following topics in the second week.  "
-},
-{
   "id": "course_intro_notes",
   "level": "1",
   "url": "course_intro_notes.html",
@@ -85,37 +67,82 @@ var ptx_lunr_docs = [
   "id": "exponential_models",
   "level": "1",
   "url": "exponential_models.html",
-  "type": "Section",
+  "type": "Worksheet",
   "number": "",
   "title": "Section 4.5: Exponential Models",
-  "body": " Section 4.5: Exponential Models  Suppose we want to fit the exponential function to two known data points. To do so, we can use the “ratio method”:     Plug the coordinates of each point into the exponential function to write two equations in terms of and .    Divide one equation by the other to eliminate and solve for .    Substitute into either equation from Step 1 and solve for .      Ex: Find an exponential function that has the values and .   Ex: Find a formula for the exponential function shown below.   Graph of exponential function         Ex: In 2005, the population of Egypt was 74 million and was growing by 2% per year.     If it continues to grow at the same rate, how long will it take the population of Egypt to double?    Given your answer to the first part, use the doubling time to write the population’s growth law.      Ex: At its current rate of growth, the population of the U.S. will double in 115.87 years. What is the annual percent growth rate of the population?   Ex: Alcohol is eliminated from the body at a rate of 15%per hour. What is the half-life of alcohol in the body?    An  is a sequence of equal payments or deposits made at equal time intervals.       If you make payments per year for years into an annuity that pays interest rate compounded times per year, the  future value  , , of the annuity is where each payment is dollars.    If you wish to receive payments per year for years from a fund that earns interest rate compounded times per year, the  present value  , , of the annuity must be where each payment is dollars.      Ex: You want to finance $25,000 to purchase a new car, and your financing institution charges an annual interest rate of 2.7%, compounded monthly. Using the formula for present value of an annuity, how large will your monthly payment be to pay off the loan in 5 years? In 6 years? Note: Making a sequence of equal payments on a loan (plus interest) is called amortizing the loan.   "
+  "body": " Section 4.5: Exponential Models   Suppose we want to fit the exponential function to two known data points. To do so, we can use the “ratio method”:     Plug the coordinates of each point into the exponential function to write two equations in terms of and .    Divide one equation by the other to eliminate and solve for .    Substitute into either equation from Step 1 and solve for .        Find an exponential function that has the values and .       Find a formula for the exponential function shown below.       Graph of exponential function             In 2005, the population of Egypt was 74 million and was growing by 2% per year.     If it continues to grow at the same rate, how long will it take the population of Egypt to double?      Given your answer to the first part, use the doubling time to write the population’s growth law.        At its current rate of growth, the population of the U.S. will double in 115.87 years. What is the annual percent growth rate of the population?       Alcohol is eliminated from the body at a rate of 15%per hour. What is the half-life of alcohol in the body?        An is a sequence of equal payments or deposits made at equal time intervals.       If you make payments per year for years into an annuity that pays interest rate compounded times per year, the  future value  , , of the annuity is where each payment is dollars.    If you wish to receive payments per year for years from a fund that earns interest rate compounded times per year, the  present value  , , of the annuity must be where each payment is dollars.        You want to finance $25,000 to purchase a new car, and your financing institution charges an annual interest rate of 2.7%, compounded monthly. Using the formula for present value of an annuity, how large will your monthly payment be to pay off the loan in 5 years? In 6 years? Note: Making a sequence of equal payments on a loan (plus interest) is called amortizing the loan.      "
 },
 {
-  "id": "exponential_models-6",
+  "id": "exponential_models-2-3",
   "level": "2",
-  "url": "exponential_models.html#exponential_models-6",
+  "url": "exponential_models.html#exponential_models-2-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Find an exponential function that has the values and .   "
+},
+{
+  "id": "exponential_models-2-4",
+  "level": "2",
+  "url": "exponential_models.html#exponential_models-2-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Find a formula for the exponential function shown below.   "
+},
+{
+  "id": "exponential_models-2-5",
+  "level": "2",
+  "url": "exponential_models.html#exponential_models-2-5",
   "type": "Figure",
   "number": "3",
   "title": "",
   "body": " Graph of exponential function     "
 },
 {
-  "id": "exponential_models-15",
+  "id": "exponential_models-3-2",
   "level": "2",
-  "url": "exponential_models.html#exponential_models-15",
+  "url": "exponential_models.html#exponential_models-3-2",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  In 2005, the population of Egypt was 74 million and was growing by 2% per year.     If it continues to grow at the same rate, how long will it take the population of Egypt to double?      Given your answer to the first part, use the doubling time to write the population’s growth law.    "
+},
+{
+  "id": "exponential_models-3-3",
+  "level": "2",
+  "url": "exponential_models.html#exponential_models-3-3",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  At its current rate of growth, the population of the U.S. will double in 115.87 years. What is the annual percent growth rate of the population?   "
+},
+{
+  "id": "exponential_models-3-4",
+  "level": "2",
+  "url": "exponential_models.html#exponential_models-3-4",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Alcohol is eliminated from the body at a rate of 15%per hour. What is the half-life of alcohol in the body?   "
+},
+{
+  "id": "exponential_models-4-3",
+  "level": "2",
+  "url": "exponential_models.html#exponential_models-4-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": " future value   present value  "
 },
 {
-  "id": "exponential_models-16",
+  "id": "exponential_models-4-4",
   "level": "2",
-  "url": "exponential_models.html#exponential_models-16",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
+  "url": "exponential_models.html#exponential_models-4-4",
+  "type": "Worksheet Exercise",
+  "number": "6",
   "title": "",
-  "body": "amortizing "
+  "body": "  You want to finance $25,000 to purchase a new car, and your financing institution charges an annual interest rate of 2.7%, compounded monthly. Using the formula for present value of an annuity, how large will your monthly payment be to pay off the loan in 5 years? In 6 years? Note: Making a sequence of equal payments on a loan (plus interest) is called amortizing the loan.    "
 }
 ]
 
