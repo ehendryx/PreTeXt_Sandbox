@@ -80,7 +80,7 @@
                 </ol>
                 </p>
                 
-                <figure xml:id="figure-tikz-airport">
+                <!-- <figure xml:id="figure-tikz-airport">
                     <caption>Axes for airport example</caption>
                     <image xml:id="tikz-airport" width="70%">
                         <shortdescription>
@@ -94,7 +94,7 @@
               \end{tikzpicture}
                         </latex-image>
                     </image>
-                </figure>
+                </figure> -->
                
                 <figure xml:id="taxi-axes1">
                     <caption>Axes for taxi example.</caption>

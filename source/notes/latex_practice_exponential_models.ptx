@@ -47,7 +47,7 @@
             <!-- <p>
                 <alert>Ex:</alert> Find a formula for the exponential function shown below.
             </p> -->
-            <exercise workspace="1in">
+            <!-- <exercise workspace="1in">
                     <statement>
                         <p>
                             Find a formula for the exponential function shown below.
@@ -55,7 +55,7 @@
 
                         
                     </statement>
-            </exercise> 
+            </exercise>  -->
         <!-- </page>
 
         <page> -->
@@ -64,7 +64,17 @@
                 <image source="/workspaces/PreTeXt_Sandbox/generated-assets/latex-image/exponential_models-6-2.svg"/>
             </figure> -->
 
-       
+       <sidebyside width="50%">
+        <exercise workspace="3in">
+                    <statement>
+                        <p>
+                            Find a formula for the exponential function shown to the right.
+                        </p>
+
+                        
+                    </statement>
+            </exercise> 
+
             <figure>
                 <caption>Graph of exponential function</caption>
             <image>
@@ -79,7 +89,7 @@
                 </latex-image>
             </image>
         </figure>
-   
+   </sidebyside>
     </page>
 
     <page>
