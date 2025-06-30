@@ -1,8 +1,6 @@
-<prefigure xmlns="https://prefigure.org" label="taxi_axes">
-    <shortdescription>An 8 by 12 grid with axis origin at lower left for plotting taxi data</shortdescription>
-    <diagram dimensions="(300,300)" margins="5">
+
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
   <coordinates bbox="(-2,-2,42,62)">
     <grid-axes xlabel="" ylabel="" spacings="((0,5,42),(0,5,62))" hlabels="()" arrows="2"/>
   </coordinates>
 </diagram>
-</prefigure>

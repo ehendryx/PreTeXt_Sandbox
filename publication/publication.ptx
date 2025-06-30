@@ -143,7 +143,7 @@
     <!-- See also                                              -->
     <!-- https://pretextbook.org/doc/guide/html/publication-file-online.html#online-style-options -->
     <css
-        theme="greeley"
+        theme="default-modern"
         primary-color="#386F94"
         primary-color-dark="#5192BD"
     />
